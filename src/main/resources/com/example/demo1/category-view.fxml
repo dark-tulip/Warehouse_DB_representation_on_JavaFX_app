@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<!--  Страница КАТЕГОРИИ -->
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.CategoryView"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <!--  Подключаем  стили-->
+    <stylesheets><URL value="@stylesheet.css" /></stylesheets>
+
+    <padding><Insets bottom="15.0" left="25.0" right="25.0" top="15.0"/></padding>
+    <Label fx:id="mainTitle" text="Категории товаров"/>
+
+    <!--  Информация о категориях из базы данных в соответствии с существующими колонами -->
+    <TextField id="name_category"        fx:id="name_category"/>
+    <TextField id="description_category" fx:id="description_category"/>
+
+    <Label fx:id="subTitle" text="Информатия о категориях продаваемых товаров"/>
+
+    <Button mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="25.0" prefWidth="150.0" text="Следующая запись"/>
+</VBox>

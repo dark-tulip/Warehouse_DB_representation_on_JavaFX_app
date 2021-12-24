@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+
+<!-- Страница товаров -->
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.ProductView"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <!--  Подключаем  стили-->
+    <stylesheets><URL value="@stylesheet.css"/></stylesheets>
+    <padding><Insets bottom="15.0" left="25.0" right="25.0" top="15.0"/></padding>
+    <Label fx:id="mainTitle" text="Товары на складе"/>
+
+    <!--  Информация о сотруднике из базы данных в соответствии с существующими колонами -->
+    <TextArea id="result_set" fx:id="result_set"/>
+    <Label fx:id="subTitle" text="Информация о товарах и продуктах на складе"/>
+
+    <Button mnemonicParsing="false" onAction="#onButtonClick" prefHeight="25.0" prefWidth="150.0" text="Все товары" />
+    <Button onAction="#onButtonClickWarehouseOne" prefHeight="25.0" prefWidth="150.0" text="Склад г. Алматы" />
+    <Button onAction="#onButtonClickWarehouseTwo" prefHeight="25.0" prefWidth="150.0" text="Склад г. Астана" />
+
+</VBox>
