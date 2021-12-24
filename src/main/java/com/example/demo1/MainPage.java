@@ -21,7 +21,7 @@ public class MainPage implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        File file = new File("src/main/resources/sklad2.png");
+        File file = new File("src/main/resources/sklad.png");
         Image image = new Image(file.toURI().toString());
         imageView.setImage(image);
     }

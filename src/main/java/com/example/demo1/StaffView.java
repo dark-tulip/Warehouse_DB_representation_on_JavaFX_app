@@ -26,7 +26,7 @@ public class StaffView {
     public void onSubmitButtonClick() throws IOException {
 
         String serverName = "DESKTOP-B32C0H6\\DEV";
-        String dataBaseName = "rgr2_3";
+        String dataBaseName = "WarehouseDB";
         String connectionUrl = String.format("jdbc:sqlserver://%1s;databaseName=%2s;integratedSecurity=true", serverName, dataBaseName);
 
         try (

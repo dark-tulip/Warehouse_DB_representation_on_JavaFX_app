@@ -14,12 +14,13 @@ public class ProductView {
     public int productID = 1;
     String res = "";
 
+    String serverName = "DESKTOP-B32C0H6\\DEV";
+    String dataBaseName = "WarehouseDB";
+    String connectionUrl = String.format("jdbc:sqlserver://%1s;databaseName=%2s;integratedSecurity=true", serverName, dataBaseName);
+
     @FXML
     public void onButtonClick() {
 
-        String serverName = "DESKTOP-B32C0H6\\DEV";
-        String dataBaseName = "rgr2_3";
-        String connectionUrl = String.format("jdbc:sqlserver://%1s;databaseName=%2s;integratedSecurity=true", serverName, dataBaseName);
         res = "";
         try (Connection connection = DriverManager.getConnection(connectionUrl);
              Statement stmt = connection.createStatement())
@@ -55,10 +56,6 @@ public class ProductView {
     @FXML
     public void onButtonClickWarehouseOne() {
 
-        String serverName = "DESKTOP-B32C0H6\\DEV";
-        String dataBaseName = "rgr2_3";
-        String connectionUrl = String.format("jdbc:sqlserver://%1s;databaseName=%2s;integratedSecurity=true", serverName, dataBaseName);
-
         try (Connection connection = DriverManager.getConnection(connectionUrl);
              Statement stmt = connection.createStatement())
         {
@@ -92,10 +89,6 @@ public class ProductView {
 
     @FXML
     public void onButtonClickWarehouseTwo() {
-
-        String serverName = "DESKTOP-B32C0H6\\DEV";
-        String dataBaseName = "rgr2_3";
-        String connectionUrl = String.format("jdbc:sqlserver://%1s;databaseName=%2s;integratedSecurity=true", serverName, dataBaseName);
 
         try (Connection connection = DriverManager.getConnection(connectionUrl);
              Statement stmt = connection.createStatement())
