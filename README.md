@@ -11,3 +11,4 @@ Authentification goes by created login and passwd on SQL Server
 (```netstat -a```)
 3) Протокол шифрования TLS при запуске может конфликтовать, желательно используйте SQL Server 2019
 4) IDE: Intellij IDEA 2021.3
+5) Брандмауэр Windows также может блокировать соединение, создайте правило для 1433 порта
