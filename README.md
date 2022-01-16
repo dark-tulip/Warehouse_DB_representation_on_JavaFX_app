@@ -1,4 +1,4 @@
-# Warehouse DB represented on application, using JDBC, JavaFX
+# Short Warehouse DB on application, used JDBC, JavaFX, SQLSERVER
 
 By purpose to learn Java.
 
